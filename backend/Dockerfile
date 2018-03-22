@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:carbon AS fullstack-resume:backend
 WORKDIR /usr/projects/fullstack-resume-backend
 
 COPY package*.json ./

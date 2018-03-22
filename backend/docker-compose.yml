@@ -1,6 +1,7 @@
 version: "3.5"
 services:
   app:
+    container_name: fullstack-resume-backend
     build: .
     command: ["npm", "run", "dev"]
     ports:
@@ -14,9 +15,9 @@ services:
       - MONGO_URL=mongodb://mongo:27017
       - DEBUG=backend:*
     volumes:
-      - ./src:/usr/src/app/src:ro
+      - ./src:/usr/projects/fullstack-resume-backend/src:ro
   database:
-    container_name: mongo
+    container_name: fullstack-resume:mongo
     image: mongo
     logging:
       driver: "none"

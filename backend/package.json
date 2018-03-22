@@ -3,14 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./src/bin/www",
+    "docker:start": "sh scripts/docker.sh",
+    "dev": "nodemon ./src/bin/www",
+    "docker:dev": "docker-compose up --b"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "nodemon": "^1.12.1",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "morgan": "~1.9.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "__test__/*"
+    ],
+    "delay": "2500"
   }
 }
