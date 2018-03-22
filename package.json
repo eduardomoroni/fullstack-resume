@@ -1,0 +1,10 @@
+{
+  "name": "fullstack-resume",
+  "version": "1.0.0",
+  "description": "Joy of Interviwing proposed code challenge",
+  "scripts": {
+    "start": "echo \"Error: not implemented yet\" && exit 1"
+  },
+  "author": "eduardomoroni",
+  "license": "ISC"
+}
