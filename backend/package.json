@@ -9,7 +9,6 @@
     "docker:dev": "docker-compose up --b"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "nodemon": "^1.12.1",
     "express": "~4.16.0",
