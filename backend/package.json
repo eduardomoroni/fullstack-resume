@@ -6,15 +6,19 @@
     "start": "node ./src/bin/www",
     "docker:start": "sh scripts/docker.sh",
     "dev": "nodemon ./src/bin/www",
-    "docker:dev": "docker-compose up --b"
+    "docker:dev": "docker-compose up --b",
+    "prettier": "prettier --write 'src/**/*.js'"
   },
   "dependencies": {
     "debug": "~2.6.9",
-    "nodemon": "^1.12.1",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "prettier": "^1.11.1"
   },
   "nodemonConfig": {
     "ignore": [

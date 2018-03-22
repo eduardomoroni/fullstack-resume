@@ -17,7 +17,7 @@ router.get('/hello', function(req, res, next) {
 
 router.use(function(req, res, next) {
   next(createError(404));
-})
+});
 
 router.use(function(err, req, res, next) {
   res.locals.message = err.message;
@@ -25,6 +25,6 @@ router.use(function(err, req, res, next) {
 
   res.status(err.status || 500);
   res.render('error');
-})
+});
 
-module.exports = { router }
+module.exports = { router };

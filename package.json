@@ -1,6 +1,7 @@
 {
   "name": "fullstack-resume",
   "version": "1.0.0",
+  "private": true,
   "description": "Joy of Interviwing proposed code challenge",
   "scripts": {
     "start": "echo \"Error: not implemented yet\" && exit 1"
