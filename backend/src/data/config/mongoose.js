@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 const blueBird = require('bluebird');
 
-const connectionUrl =
-  process.env.NODE_ENV === 'production'
-    ? process.env.MONGO_URL
-    : process.env.MONGO_TEST_URL;
+const { NODE_ENV, MONGO_URL, MONGO_TEST_URL } = process.env;
+
+const connectionUrl = NODE_ENV === 'production' ? MONGO_URL : MONGO_TEST_URL;
 
 const parserOptions = {
   virtuals: true,

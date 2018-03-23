@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const blueBird = require('bluebird');
 
-const connectMongo = async url => {
+const connect = async url => {
   const options = { useMongoClient: true, promiseLibrary: blueBird };
   mongoose.Promise = blueBird;
 
@@ -12,8 +12,8 @@ const connectMongo = async url => {
   );
 };
 
-const closeConnection = async () => {
+const close = async () => {
   mongoose.connection.close();
 };
 
-module.exports = { connectMongo, closeConnection };
+module.exports = { connect, close };
