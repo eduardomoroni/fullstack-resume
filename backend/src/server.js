@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const debug = require('debug')('backend:server')
+const debug = require('debug')('backend:server');
 const app = require('./presentation/api');
 const http = require('http');
 
