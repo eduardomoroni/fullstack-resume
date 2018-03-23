@@ -4,12 +4,17 @@
   "private": true,
   "description": "Joy of Interviwing proposed code challenge",
   "scripts": {
-    "start": "echo \"Error: not implemented yet\" && exit 1"
+    "start": "echo \"Error: not implemented yet\" && exit 1",
+    "precommit": "lint-staged"
   },
   "author": "eduardomoroni",
   "license": "ISC",
   "engines": {
     "node": "8.9.4",
     "npm": "5.5.1"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0"
   }
 }
