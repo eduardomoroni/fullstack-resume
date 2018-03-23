@@ -1,6 +1,6 @@
 version: "3.5"
 services:
-  app:
+  api:
     container_name: fullstack-resume-backend
     build: .
     command: ["npm", "run", "dev"]
@@ -10,10 +10,6 @@ services:
       - database
     env_file:
       - .env
-    environment:
-      - NODE_ENV=development
-      - MONGO_URL=mongodb://mongo:27017
-      - DEBUG=backend:*
     volumes:
       - ./src:/usr/projects/fullstack-resume-backend/src:ro
   database:
