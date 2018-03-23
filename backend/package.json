@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "docker:start": "sh scripts/docker.sh",
+    "test": "jest",
     "dev": "nodemon ./src/server.js",
     "docker:dev": "docker-compose up --b",
     "prettier": "prettier --write 'src/**/*.js'"
@@ -16,8 +17,15 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "jest": "^22.4.3",
     "nodemon": "^1.12.1",
     "prettier": "^1.11.1"
+  },
+  "jest": {
+    "testMatch": [
+      "*.test.js"
+    ],
+    "testEnvironment": "node"
   },
   "nodemonConfig": {
     "ignore": [
