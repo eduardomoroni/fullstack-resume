@@ -1,17 +1,13 @@
 const { Router } = require('express');
 
-const { jobRouter } = require('./job');
-const { timeRouter } = require('./time');
-const { helloRouter } = require('./hello');
+const { candidateRouter } = require('./candidate');
 const { notFoundRouter } = require('./notFound');
 const { errorHandler } = require('./errorsHandler');
 const { ignoreFavIcon } = require('./ignoreFavIcon');
 
 const router = Router();
 
-router.use(jobRouter);
-router.use(timeRouter);
-router.use(helloRouter);
+router.use(candidateRouter);
 
 router.use(errorHandler);
 router.use(ignoreFavIcon);
