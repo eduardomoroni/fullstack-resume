@@ -2,7 +2,7 @@
   "name": "fullstack-resume",
   "version": "1.0.0",
   "private": true,
-  "description": "Joy of Interviwing proposed code challenge",
+  "description": "Joy of Interviewing proposed code challenge",
   "scripts": {
     "start": "echo \"Error: not implemented yet\" && exit 1",
     "precommit": "lint-staged"
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "husky": "^0.14.3",
-    "lint-staged": "^7.0.0"
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1"
   }
 }
