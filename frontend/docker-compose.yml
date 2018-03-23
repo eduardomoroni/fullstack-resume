@@ -10,7 +10,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./src:/usr/projects/fullstack-resume-backend/src:ro
+      - ./src:/usr/projects/fullstack-resume-frontend/src:ro
   api:
     build: ../backend
     ports:
