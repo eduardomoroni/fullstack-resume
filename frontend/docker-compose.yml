@@ -11,6 +11,7 @@ services:
       - .env
     volumes:
       - ./src:/usr/projects/fullstack-resume-frontend/src:ro
+      - ./node_modules:/usr/projects/fullstack-resume-frontend/node_modules:ro
   api:
     build: ../backend
     ports:

@@ -3,8 +3,6 @@ import React from 'react';
 import App from './App';
 import './index.css';
 
-const startReactApp = () => {
+export const startReactApp = () => {
   ReactDOM.render(<App />, document.getElementById('root'));
 };
-
-export default startReactApp;

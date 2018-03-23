@@ -1,7 +1,8 @@
 import Axios from 'axios';
 
 export const initializeAxios = () => {
-  Axios.defaults.headers.post['Content-Type'] = 'application/json';
-  Axios.defaults.headers.post['Accept'] = 'application/json';
-  Axios.defaults.baseURL = process.env.API_URL;
+  Axios.defaults.timeout = 2500;
+  Axios.defaults.baseURL = 'http://localhost:3001';
+  Axios.defaults.headers.common['Accept'] = 'application/json';
+  Axios.defaults.headers.common['Content-Type'] = 'application/json';
 };

@@ -1,5 +1,5 @@
 import { initializeAxios } from './data/config/axios';
-import start from './presentation';
+import { startReactApp } from './presentation';
 
 initializeAxios();
-start();
+startReactApp();
