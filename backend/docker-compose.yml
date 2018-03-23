@@ -17,7 +17,7 @@ services:
     volumes:
       - ./src:/usr/projects/fullstack-resume-backend/src:ro
   database:
-    container_name: fullstack-resume:mongo
+    container_name: fullstack-resume-mongo
     image: mongo
     logging:
       driver: "none"
