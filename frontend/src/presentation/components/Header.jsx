@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getName } from '../../data/candidate';
 import logo from '../assets/svg/logo.svg';
-import '../components/styles/Home.css';
+import '../components/styles/Header.css';
 
 export class Header extends Component {
   state = { name: '' };
