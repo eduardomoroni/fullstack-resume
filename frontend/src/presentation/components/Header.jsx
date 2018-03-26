@@ -11,16 +11,11 @@ export class Header extends Component {
     this.setState({ name });
   };
 
-  renderCandidateName = () =>
-    this.state.name && (
-      <h1 className="App-title">{`${this.state.name} Resume`}</h1>
-    );
-
   render() {
     return (
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {this.renderCandidateName()}
+        <img src={logo} className="React-logo" alt="logo" />
+        <h1 className="Header-title">{`${this.state.name} Resume`}</h1>
       </header>
     );
   }

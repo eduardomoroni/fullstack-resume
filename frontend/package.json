@@ -16,12 +16,9 @@
     "prettier": "prettier --write 'src/**/*.js'"
   },
   "devDependencies": {
-    "prettier": "^1.11.1"
-  },
-  "jest": {
-    "testMatch": [
-      "*.test.js"
-    ],
-    "testEnvironment": "jsdom"
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "prettier": "^1.11.1",
+    "puppeteer": "^1.2.0"
   }
 }
