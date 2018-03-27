@@ -76,6 +76,7 @@ typings/
 
 # testing
 */coverage
+*/screenshots
 
 # production
 /build
