@@ -13,9 +13,12 @@
     "docker:dev": "docker-compose up --b",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "prettier": "prettier --write 'src/**/*.js'"
+    "prettier": "prettier --write 'src/**/*.js'",
+    "cypress:ci": "cypress run --record --key 982a76c7-8b42-4f83-8ef0-e0c0f03b71c6",
+    "cypress:open": "cypress open"
   },
   "devDependencies": {
+    "cypress": "3.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "prettier": "^1.11.1",
